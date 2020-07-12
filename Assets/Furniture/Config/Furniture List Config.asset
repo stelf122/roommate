@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Furniture List Config
   m_EditorClassIdentifier: 
   _furniture:
-  - _name: Box
-    _prefab: {fileID: 2231296807505656124, guid: 72c8ee964ee51ec4483bf251d5b82613,
+  - _name: Brown Chair
+    _prefab: {fileID: 6851865294553623250, guid: 96a02525114b51e478ca9a38be7abb82,
+      type: 3}
+  - _name: White Chair
+    _prefab: {fileID: 599952890615819955, guid: f4117c3cfb3e2d4439920d3ec2de33d2,
+      type: 3}
+  - _name: Sofa
+    _prefab: {fileID: 3474818351976753877, guid: 3ee98a1fe5580974cb8f4bb020576085,
+      type: 3}
+  - _name: Lamp
+    _prefab: {fileID: 3742886209816957563, guid: 253925a0ebc50d74884a38c2553b9921,
       type: 3}

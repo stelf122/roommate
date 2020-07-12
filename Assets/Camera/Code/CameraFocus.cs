@@ -8,13 +8,16 @@ public class CameraFocus : MonoBehaviour
 
     private SavedState wallsState;
     private SavedState freeState;
+    private SavedState centerState;
 
     private void Start()
     {
+        centerState = new SavedState(transform);
+
         wallsState = new SavedState(_lookWalls);
     }
 
-    public void ChangeFocus(FocusType focus)
+    public void ChangeFocus(FocusType focus, Transform point = null)
     {
         switch (focus)
         {
@@ -31,13 +34,20 @@ public class CameraFocus : MonoBehaviour
 
                 _cameraMovement.enabled = false;
                 break;
+
+            case FocusType.Target:
+                centerState.Load(transform);
+
+                transform.LookAt(point);
+                break;
         }
     }
 
     public enum FocusType
     {
         Free,
-        Walls
+        Walls,
+        Target
     }
 
     private struct SavedState

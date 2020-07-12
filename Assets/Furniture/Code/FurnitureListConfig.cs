@@ -10,6 +10,11 @@ public class FurnitureListConfig : ScriptableObject
 
     public FurnitureInfo[] Furnitures() => _furniture;
 
+    public GameObject GetFurniturePrefab(int index)
+    {
+        return _furniture[index].Prefab();
+    }
+
     [Serializable]
     public struct FurnitureInfo
     {
