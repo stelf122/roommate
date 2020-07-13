@@ -877,7 +877,7 @@ MonoBehaviour:
   _raycastlayers:
     serializedVersion: 2
     m_Bits: 256
-  sensativity: 0.25
+  sensativity: 0.15
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
